@@ -1,4 +1,5 @@
 🍔 Food Ordering SQL Analytics Project
+
 📌 Project Overview
 
 This project simulates a Food Ordering System and demonstrates how SQL can be used to extract valuable business insights from raw order data. The database includes customers, restaurants, cuisines, orders, and promotions, and the queries address real-world business problems around customer acquisition, retention, and sales performance.
