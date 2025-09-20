@@ -1,41 +1,75 @@
-🍔 Food Ordering SQL Analytics Project
+🍽️ Food Ordering SQL Analytics Project
 
-📌 Project Overview
+A SQL-based project simulating a Food Ordering system that demonstrates how to extract meaningful business insights from order data. The goal is to showcase analytics on customer behaviour, restaurant performance, promotion effectiveness, and retention.
 
-This project simulates a Food Ordering System and demonstrates how SQL can be used to extract valuable business insights from raw order data. The database includes customers, restaurants, cuisines, orders, and promotions, and the queries address real-world business problems around customer acquisition, retention, and sales performance.
+📋 Project Overview
 
-🔑 Key Business Insights & Queries
+This project builds a database with tables such as:
 
-Top Outlets by Cuisine Type – Identified the best-performing restaurants by cuisine using ROW_NUMBER() and window functions.
+Customers
 
-Daily New Customer Acquisition – Tracked how many new customers were acquired each day since launch.
+Restaurants / Outlets
 
-One-Time Customers in Jan 2025 – Counted customers who placed only one order in Jan 2025 and never returned.
+Cuisine Types
 
-Inactive Customers – Listed users with no orders in the last 7 days, who joined a month ago with their first order on a promo code.
+Orders
 
-Customer Retention Triggers – Wrote a query to identify customers after every 3rd order for personalized marketing communication.
+Promotions
 
-Promo-Only Customers – Found customers who placed all their orders using promo codes.
+Using SQL (joins, window functions, subqueries, aggregations, etc.), it answers real-world business questions like:
 
-Organic Acquisition % – Calculated what percentage of customers were acquired without promo codes in Jan 2025.
+Who are our top performing restaurants & cuisines?
 
-🛠️ Tools & Techniques
+How many new customers do we acquire each day?
 
-SQL (Window Functions, CTEs, Joins, Aggregations, Subqueries)
+Which customers order only once? Which are inactive?
 
-Database Optimization using indexing and query tuning
+What is the impact of promotions vs organic growth?
 
-Business Metrics: Customer Acquisition %, Retention %, Promo Effectiveness %, Organic Growth %
+How strong is customer retention?
 
-📈 Business Value
+🔍 Key Business Insights & Queries
 
-This project showcases how SQL can power data-driven decision-making in the food delivery industry by:
+Here are some of the queries / analyses included:
 
-Tracking customer acquisition & retention rates
+Top Outlets by Cuisine Type – Ranking restaurants by performance per cuisine using window functions.
 
-Measuring the impact of promotions vs. organic growth
+Daily New Customer Acquisition – Tracking how many new customers are joining daily.
 
-Identifying top-performing outlets and cuisines
+One-Time Customers – Identifying customers who placed only one order in a given month and never returned.
 
-Building the foundation for growth and engagement strategies
+Inactive Customers – Users who joined a while ago but haven’t placed an order recently.
+
+Customer Retention Triggers – Finding customers for targeted engagement based on order frequency (e.g. after the 3rd order).
+
+Promo-Only Customers – Customers who always use promotions rather than paying full price.
+
+Organic Acquisition Percentage – Proportion of customers acquired without promo codes in a specific period.
+
+🛠 Tools & Techniques
+
+SQL (including window functions, CTEs, aggregates, joins, subqueries)
+
+Query Optimization / tuning for readable and efficient queries
+
+Business Metrics: acquisition rate, retention rate, promo effectiveness, organic growth
+
+📂 Repository Structure
+
+Food-Ordering/
+
+├── README.md                             # This file
+
+├── Food_ordering.sql                     # SQL schema + sample queries
+
+└── dml_script_food_ordering.sql          # Data operations (inserts, updates etc.)
+
+🎯 Business Value
+
+Helps in tracking how well restaurants / cuisines are performing
+
+Enables measuring the ROI of promotional campaigns
+
+Provides visibility into customer lifecycle: new customers, inactive, retention
+
+Supports strategy development: e.g., which outlets to scale, what promotions to run, which customers need retention offers
